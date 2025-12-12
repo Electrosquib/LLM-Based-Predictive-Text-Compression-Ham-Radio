@@ -12,7 +12,8 @@ tags:
 
 # Model Card for Model ID
 
-<!-- Provide a quick summary of what the model is/does. -->
+This is an experiment to explore the efficacy of using small fine-tuned LLMs for lossless compression of amateur radio voice exchanges, evaluating whether predicted token streams and model-based reconstruction can match original QSO text while drastically reducing storage overhead.
+
 
 
 
@@ -20,25 +21,34 @@ tags:
 
 ### Model Description
 
-<!-- Provide a longer summary of what this model is. -->
+#### LLM-Based Compression of Amateur Radio QSOs
+
+This project investigates whether a small fine-tuned language model can be used to **shorten amateur radio voice transmissions** by acting as a predictive text compressor. Instead of sending full QSO sentences over the air, operators could transmit compact symbolic or partial representations that a shared LLM then expands back into full conversational text.
+
+The experiment focuses on:
+
+* training a lightweight model to learn common QSO structure and next-word patterns
+* evaluating how well the model can reconstruct full exchanges from compressed inputs
+* measuring compression ratio vs. fidelity for typical ragchew and signal-report scenarios
+* exploring whether an LLM can serve as a “semantic codec” for radio traffic
+
+The goal is to test how effectively **small, specialized LLMs** can reduce transmission length while preserving meaning, flow, and ham-radio conversational style.
 
 
 
-- **Developed by:** [More Information Needed]
-- **Funded by [optional]:** [More Information Needed]
-- **Shared by [optional]:** [More Information Needed]
-- **Model type:** [More Information Needed]
-- **Language(s) (NLP):** [More Information Needed]
-- **License:** [More Information Needed]
-- **Finetuned from model [optional]:** [More Information Needed]
+
+- **Developed by:** Levi Farinas
+- **Funded by:** Levi Farinas
+- **Model type:** CAUSAL_LM
+- **Language(s) (NLP):** English
+- **License:** Do whatever you want
+- **Finetuned from model:** QWEN3-0.6B
 
 ### Model Sources [optional]
 
 <!-- Provide the basic links for the model. -->
 
-- **Repository:** [More Information Needed]
-- **Paper [optional]:** [More Information Needed]
-- **Demo [optional]:** [More Information Needed]
+- **Repository:** https://github.com/Electrosquib/LLM-Based-Predictive-Text-Compression-Ham-Radio
 
 ## Uses
 
