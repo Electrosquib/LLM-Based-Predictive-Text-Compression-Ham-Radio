@@ -23,7 +23,7 @@ This is an experiment to explore the efficacy of using small fine-tuned LLMs for
 
 #### LLM-Based Compression of Amateur Radio QSOs
 
-This project investigates whether a small fine-tuned language model can be used to **shorten amateur radio voice transmissions** by acting as a predictive text compressor. Instead of sending full QSO sentences over the air, operators could transmit compact symbolic or partial representations that a shared LLM then expands back into full conversational text.
+This project investigates whether a small fine-tuned language model can be used to **shorten amateur radio text transmissions** by acting as a predictive text compressor. Instead of sending full QSO sentences over the air, operators could transmit compact symbolic or partial representations that a shared seed and weight LLM then expands back into full conversational text.
 
 The experiment focuses on:
 
