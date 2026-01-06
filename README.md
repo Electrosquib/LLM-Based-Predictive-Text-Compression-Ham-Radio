@@ -12,7 +12,7 @@ tags:
 
 # Model Card for Model ID
 
-This is an experiment to explore the efficacy of using small fine-tuned LLMs for lossless compression of amateur radio voice exchanges, evaluating whether predicted token streams and model-based reconstruction can match original QSO text while drastically reducing storage overhead.
+This is an experiment to explore the efficacy of using small fine-tuned LLMs for lossless compression of amateur radio text exchanges, evaluating whether predicted token streams and model-based reconstruction can match original QSO text while drastically reducing storage overhead.
 
 
 
